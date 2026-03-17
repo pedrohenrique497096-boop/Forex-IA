@@ -25,6 +25,13 @@ if st.button("Analisar mercado"):
         st.write("Direção:", result["direction"])
         st.write("Confiança:", result["confidence"], "%")
 
+        st.write("Entrada:", result["entry"])
+        st.write("Stop:", result["stop"])
+
+        st.write("Take 1:", result["take1"])
+        st.write("Take 2:", result["take2"])
+        st.write("Take 3:", result["take3"])
+
         st.write("Motivos da análise:")
 
         for r in result["summary"]:
